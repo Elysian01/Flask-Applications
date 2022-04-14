@@ -36,28 +36,6 @@ def operation():
     return render_template("operation.html")
 
 
-@app.route('/subtract', methods=['GET', 'POST'])
-def subtract():
-    if request.method == 'POST':
-        first_number = request.form.get('first_number')
-        second_number = request.form.get('second_number')
-        result = float(first_number) - float(second_number)
-        return render_template("result.html", result=result)
-
-    return render_template("operation.html")
-
-
-@app.route('/multiply', methods=['GET', 'POST'])
-def multiply():
-    if request.method == 'POST':
-        first_number = request.form.get('first_number')
-        second_number = request.form.get('second_number')
-        result = float(first_number) * float(second_number)
-        return render_template("result.html", result=result)
-
-    return render_template("operation.html")
-
-
 @app.route('/result', methods=['POST'])
 def result():
     return render_template("result.html")
