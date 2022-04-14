@@ -7,7 +7,7 @@ First Install Flask using
 pip install flask
 ```
 
-Then to run the project simply go in the required directory and run the following command
+Then to run the project, simply go in the required directory and run the following command
 ```bash
 python app.py
 ```
