@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results Page</title>
+
+    
+    <style>
+        .info {
+            background-color: #2ab7ca;
+            border:none;
+            color: #fff;
+            border-radius: 4px;
+             font-size: medium;
+            padding: 0.5rem 1.5rem;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Result</h1>
+    <hr>
+
+    <h3>Answer: {{ result }}</h3>
+
+    <a href ="{{ url_for('home') }}" >
+        <button class="info" type="submit">Go Back</button>
+    </a>
+    
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        select {
+            font-size: x-large;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Flask Navigation Application</h1>
+    <hr>
+    <br><br>
+
+    <form name="home-form" method="POST" action='{{ url_for("home") }}'>
+        <select name = "select_operation" onchange="this.form.submit()">
+            <option value="none" selected disabled>Choose Operation</option>
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+        </select>
+    </form>
+
+    <br><br>
+    
+</body>
+</html>
